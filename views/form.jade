@@ -4,8 +4,8 @@ block content
     form(method='POST', action='/new')
         p
         | Author: 
-        input(type='text', name='author', value='')
+        input(type='text', name='author', value='' required)
         |          Message: 
-        input(type='text', name='msg-text', value='')
+        input(type='text', name='msg-text', value='' required)
         |          Submit: 
         input(type='button', name='submit', value='submit')
