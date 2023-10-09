@@ -27,7 +27,7 @@ router.get('/new', function (req, res, next) {
 router.post('/new', (req, res) => {
   const messageText = req.body.message;
   const messageUser = req.body.author;
-  messages.unshift({ text: messageText, user: messageUser, added: new Date() });
+  messages.push({ text: messageText, user: messageUser, added: new Date() });
   res.redirect('/');
 });
 
